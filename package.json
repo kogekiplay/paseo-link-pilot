@@ -1,13 +1,12 @@
 {
-  "name": "@xzthemeofsss/paseo-link-pilot",
-  "version": "0.1.1",
+  "name": "@kogekiplay/paseo-link-pilot",
+  "version": "0.1.2",
   "description": "Choose where chat links open for a click or Command-click in Paseo.",
   "license": "MIT",
   "author": "xzthemeofsss",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xzthemeofsss/paseo-plugins.git",
-    "directory": "plugins/link-pilot"
+    "url": "git+https://github.com/kogekiplay/paseo-link-pilot.git"
   },
   "files": [
     "paseo-plugin.json",

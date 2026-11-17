@@ -18,7 +18,7 @@ Enable Link Pilot on one host per app. That installation’s preferences apply t
 Requires the Paseo **desktop app and daemon 0.15.4 through 0.15.x**. The app's internal browser adapter is checked at runtime; unsupported app internals leave native link handling active.
 
 ```sh
-paseo plugin add git:kogekiplay/paseo-plugins:plugins/link-pilot --ref codex/link-pilot
+paseo plugin add git:kogekiplay/paseo-link-pilot
 ```
 
 If upgrading from the earlier local prototype, disable it first:
@@ -28,6 +28,8 @@ paseo plugin disable in-app-links
 ```
 
 The runtime ID is `link-pilot`. This direct Git source contains the Paseo 0.15.4 compatibility update. The marketplace record remains pinned to the older 0.13.x artifact until a new review is submitted.
+
+The standalone repository's default branch is `main`. Git installations update from this branch with `paseo plugin update link-pilot --yes`. Local source edits require a commit, push, and plugin update to reach a Git installation; `reload` alone uses the already installed files.
 
 ## Scope and data
 
@@ -54,3 +56,7 @@ The focused integration suite reads the installed macOS Paseo app's real Markdow
 Tested against macOS Paseo 0.15.4: source-pane navigation, both destinations for both gestures, Windows/Linux modifier policy in fixtures, settings read errors, disposal, and changed source context. Windows/Linux desktop operation and native devices have not been independently exercised.
 
 See [the listing overview](OVERVIEW.md) and [marketplace submission](MARKETPLACE.md). The listing title, description and overview use English in every locale; settings, commands and errors follow Paseo’s language.
+
+## Attribution
+
+This maintained version is derived from [xzthemeofsss/paseo-plugins](https://github.com/xzthemeofsss/paseo-plugins), originally under `plugins/link-pilot` on `codex/link-pilot`. The original MIT license and author credit are preserved. The standalone history retains the commits that changed this plugin.

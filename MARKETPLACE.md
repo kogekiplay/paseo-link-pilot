@@ -1,5 +1,7 @@
 # Marketplace submission
 
+This file records the original upstream listing. The maintained standalone version is published at https://github.com/kogekiplay/paseo-link-pilot on `main`, with package version `0.1.2`. It is installed directly from Git and has not been submitted as a new registry listing.
+
 Submitted through the official form on 2026-10-27: [submission #1264](https://github.com/getpaseo/plugins/issues/1264), [registry review #1265](https://github.com/getpaseo/plugins/pull/1265). The original artifact was approved and merged. The English-only listing correction needs a new reviewed commit before it reaches the registry.
 
 ## Form fields
