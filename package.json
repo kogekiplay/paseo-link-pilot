@@ -1,6 +1,6 @@
 {
   "name": "@kogekiplay/paseo-link-pilot",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Choose where chat links open for a click or Command-click in Paseo.",
   "license": "MIT",
   "author": "xzthemeofsss",
@@ -27,7 +27,7 @@
     "format": "oxfmt client server shared scripts tests index.client.tsx index.server.ts paseo-plugin.json package.json tsconfig.json tsconfig.test.json README.md OVERVIEW.md MARKETPLACE.md assets/README.md"
   },
   "devDependencies": {
-    "@getpaseo/plugin": "0.15.4",
+    "@getpaseo/plugin": "0.16.0",
     "@types/jsdom": "21.1.7",
     "@types/node": "22.19.0",
     "@types/react": "19.1.0",

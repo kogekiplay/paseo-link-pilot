@@ -15,7 +15,7 @@ Enable Link Pilot on one host per app. That installation’s preferences apply t
 
 ## Install
 
-Requires the Paseo **desktop app and daemon 0.15.4 through 0.15.x**. The app's internal browser adapter is checked at runtime; unsupported app internals leave native link handling active.
+Requires the Paseo **desktop app and daemon 0.15.4 through 0.16.x**. The app's internal browser adapter is checked at runtime; unsupported app internals leave native link handling active.
 
 ```sh
 paseo plugin add git:kogekiplay/paseo-link-pilot
@@ -27,7 +27,7 @@ If upgrading from the earlier local prototype, disable it first:
 paseo plugin disable in-app-links
 ```
 
-The runtime ID is `link-pilot`. This direct Git source contains the Paseo 0.15.4 compatibility update. The marketplace record remains pinned to the older 0.13.x artifact until a new review is submitted.
+The runtime ID is `link-pilot`. This direct Git source supports Paseo 0.15.4 and 0.16.x. The marketplace record remains pinned to the older 0.13.x artifact until a new review is submitted.
 
 The standalone repository's default branch is `main`. Git installations update from this branch with `paseo plugin update link-pilot --yes`. Local source edits require a commit, push, and plugin update to reach a Git installation; `reload` alone uses the already installed files.
 
@@ -53,7 +53,7 @@ npm pack --dry-run --ignore-scripts
 
 The focused integration suite reads the installed macOS Paseo app's real Markdown link renderer and pure routing/file-classification modules. Set `PASEO_BUNDLE` to a packaged desktop entry JavaScript file on another machine. Browser stores and navigation are controlled test fixtures. Tests do not contact a daemon or open real external websites.
 
-Tested against macOS Paseo 0.15.4: source-pane navigation, both destinations for both gestures, Windows/Linux modifier policy in fixtures, settings read errors, disposal, and changed source context. Windows/Linux desktop operation and native devices have not been independently exercised.
+The integration suite and bundle probe have passed against macOS Paseo 0.15.4 and 0.16.0: source-pane navigation, both destinations for both gestures, Windows/Linux modifier policy in fixtures, settings read errors, disposal, and changed source context. Browser navigation, Finder and clipboard callbacks are controlled fixtures; passing tests do not verify real Finder or clipboard actions. Windows/Linux desktop operation and native devices have not been independently exercised.
 
 See [the listing overview](OVERVIEW.md) and [marketplace submission](MARKETPLACE.md). The listing title, description and overview use English in every locale; settings, commands and errors follow Paseo’s language.
 

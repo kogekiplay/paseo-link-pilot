@@ -1,6 +1,6 @@
 # Marketplace submission
 
-This file records the original upstream listing. The maintained standalone version is published at https://github.com/kogekiplay/paseo-link-pilot on `main`, with package version `0.1.2`. It is installed directly from Git and has not been submitted as a new registry listing.
+This file records the original upstream listing. The maintained standalone version is published at https://github.com/kogekiplay/paseo-link-pilot on `main`, with package version `0.1.3`. It is installed directly from Git and has not been submitted as a new registry listing.
 
 Submitted through the official form on 2026-10-27: [submission #1264](https://github.com/getpaseo/plugins/issues/1264), [registry review #1265](https://github.com/getpaseo/plugins/pull/1265). The original artifact was approved and merged. The English-only listing correction needs a new reviewed commit before it reaches the registry.
 
@@ -57,3 +57,5 @@ Listing updates require a new pinned commit and registry review. Uploading the s
 ## Compatibility update
 
 The `codex/link-pilot` source branch now carries package version `0.1.1`, uses the Paseo 0.15.4 SDK, and declares `>=0.15.4 <0.16.0`. On 2026-11-14 it passed typecheck, lint, 49 integration tests, the installed 0.15.4 bundle probe, package dry run, and a local daemon install and reload. The marketplace record remains pinned to the original 0.13.x artifact until a new review is submitted.
+
+The standalone `main` branch's version `0.1.3` uses the Paseo 0.16.0 SDK and declares `>=0.15.4 <0.17.0`. This extends support to Paseo 0.16.x while keeping the existing link behavior. The original marketplace pin is unchanged.
